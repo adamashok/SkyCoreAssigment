@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="15dp"
+    android:layout_marginHorizontal="8dp"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="8dp"
+    android:layout_marginBottom="20dp"
+    app:cardBackgroundColor="@color/white"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/imgRestaurent"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:srcCompat="@tools:sample/avatars" />
+
+
+        <TextView
+            android:id="@+id/txtResName"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="5dp"
+            android:text="Restaurent Name"
+            android:maxLines="1"
+            android:ellipsize="end"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtDistance"
+            app:layout_constraintStart_toEndOf="@+id/imgRestaurent"
+            app:layout_constraintTop_toTopOf="@+id/imgRestaurent" />
+
+        <TextView
+            android:id="@+id/txtDistance"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="5dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="Distance"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgRestaurent"
+            app:layout_constraintStart_toEndOf="@+id/imgRestaurent"
+            app:layout_constraintTop_toTopOf="@+id/imgRestaurent" />
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginStart="5dp"
+            android:ellipsize="end"
+
+            android:maxLines="1"
+            android:text="Address"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/imgRestaurent"
+            app:layout_constraintStart_toEndOf="@+id/imgRestaurent"
+            app:layout_constraintTop_toBottomOf="@+id/txtDistance" />
+
+        <TextView
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/txtRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginEnd="10dp"
+            android:text="TextView"
+            android:textSize="11sp"
+            android:gravity="end"
+            app:layout_constraintBottom_toBottomOf="@+id/txtResName"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtResName" />
+
+        <TextView
+            android:id="@+id/txtOpenStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="5dp"
+            android:layout_marginEnd="10dp"
+            android:text="TextView"
+            android:textSize="11sp"
+            app:layout_constraintBottom_toBottomOf="@+id/txtDistance"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/txtDistance" />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>
